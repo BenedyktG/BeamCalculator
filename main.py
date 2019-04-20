@@ -28,18 +28,14 @@ Mr1 = 0
 Mr2 = 0
 
 for i in range(len(mUDL)):
-    UDLr1temp = mUDL[i] * (mlUDL[i][1] - mlUDL[i][0]) * \
+    UDLr1 += mUDL[i] * (mlUDL[i][1] - mlUDL[i][0]) * \
         (lR[1] - (mlUDL[i][0] + ((mlUDL[i][1] - mlUDL[i][0]) / 2)))
-    UDLr2temp = mUDL[i] * (mlUDL[i][1] - mlUDL[i][0]) * \
+    UDLr2 += mUDL[i] * (mlUDL[i][1] - mlUDL[i][0]) * \
         (lR[0] - (mlUDL[i][0] + ((mlUDL[i][1] - mlUDL[i][0]) / 2)))
-    UDLr1 += UDLr1temp
-    UDLr2 += UDLr2temp
 
 for i in range(len(mF)):
-    Fr1temp = mF[i] * (lR[1] - mlF[i])
-    Fr2temp = mF[i] * (lR[0] - mlF[i])
-    Fr1 += Fr1temp
-    Fr2 += Fr2temp
+    Fr1 += mF[i] * (lR[1] - mlF[i])
+    Fr2 += mF[i] * (lR[0] - mlF[i])
 
 for i in range(len(mM)):
     Mr1 += mM[i]
