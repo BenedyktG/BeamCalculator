@@ -36,8 +36,8 @@ for i in range(len(mUDL)):
     UDLr2 += UDLr2temp
 
 for i in range(len(mF)):
-    Fr1temp = mF[i] * (lR2 - mlF[i])
-    Fr2temp = mF[i] * (lR1 - mlF[i])
+    Fr1temp = mF[i] * (lR[1] - mlF[i])
+    Fr2temp = mF[i] * (lR[0] - mlF[i])
     Fr1 += Fr1temp
     Fr2 += Fr2temp
 
