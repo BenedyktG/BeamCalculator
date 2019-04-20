@@ -29,9 +29,9 @@ Mr2 = 0
 
 for i in range(len(mUDL)):
     UDLr1temp = mUDL[i] * (mlUDL[i][1] - mlUDL[i][0]) * \
-        (lR2 - (mlUDL[i][0] + ((mlUDL[i][1] - mlUDL[i][0]) / 2)))
+        (lR[1] - (mlUDL[i][0] + ((mlUDL[i][1] - mlUDL[i][0]) / 2)))
     UDLr2temp = mUDL[i] * (mlUDL[i][1] - mlUDL[i][0]) * \
-        (lR1 - (mlUDL[i][0] + ((mlUDL[i][1] - mlUDL[i][0]) / 2)))
+        (lR[0] - (mlUDL[i][0] + ((mlUDL[i][1] - mlUDL[i][0]) / 2)))
     UDLr1 += UDLr1temp
     UDLr2 += UDLr2temp
 
